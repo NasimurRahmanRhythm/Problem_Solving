@@ -1,0 +1,187 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a<b<c<d)
+    {
+        if((b+c)>d)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+c)==d)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(b<a<c<d)
+    {
+        if((a+c)>d)
+        {
+            printf("TRIANGLE");
+        }
+        else if((a+c)==d)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(c<b<a<d)
+    {
+        if((b+a)>d)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+a)==d)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(d<b<c<a)
+    {
+        if((b+c)>a)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+c)==a)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(a<d<c<b)
+    {
+        if((d+c)>b)
+        {
+            printf("TRIANGLE");
+        }
+        else if((d+c)==b)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(a<b<d<c)
+    {
+        if((b+d)>c)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+d)==c)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(b<d<c<a)
+    {
+        if((d+c)>a)
+        {
+            printf("TRIANGLE");
+        }
+        else if((d+c)==a)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(b<a<d<c)
+    {
+        if((a+d)>c)
+        {
+            printf("TRIANGLE");
+        }
+        else if((a+d)==c)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(c<d<a<b)
+    {
+        if((d+a)>b)
+        {
+            printf("TRIANGLE");
+        }
+        else if((d+a)==b)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(c<b<d<a)
+    {
+        if((b+d)>a)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+d)==a)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(d<a<c<b)
+    {
+        if((a+c)>b)
+        {
+            printf("TRIANGLE");
+        }
+        else if((a+c)==b)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    if(d<b<a<c)
+    {
+        if((b+a)>c)
+        {
+            printf("TRIANGLE");
+        }
+        else if((b+a)==c)
+        {
+            printf("SEGMENT");
+        }
+        else
+        {
+            printf("IMPOSSIBLE");
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,41 @@
+#include<stdio.h>
+long long int i,t,s[9999999]={0},j,n[9999999],m[9999999],k,l=1,r,p;
+int main()
+{
+        scanf("%lld%lld",&r,&p);
+        m[0]=2;
+        for(j=3;j*j<50;j=j+2)
+        {
+            if(s[j]!=1){
+            for(k=2;j*k<=50;k=k+1)
+            {
+                s[j*k]=1;
+            }
+            }
+        }
+    for(j=3;j<=50;j=j+2)
+    {
+        if(s[j]!=1)
+        {
+            m[l]=j;
+            l++;
+        }
+    }
+    for(i=0;i<l;i++)
+    {
+        if(m[i]==r)
+        {
+            if(m[i+1]==p)
+            {
+                printf("YES");
+                break;
+            }
+            else
+            {
+                printf("NO");
+                break;
+            }
+        }
+    }
+    return 0;
+}
